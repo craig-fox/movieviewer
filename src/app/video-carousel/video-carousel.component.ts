@@ -10,7 +10,7 @@ import {Video} from '../model/video';
 })
 
 export class VideoCarouselComponent implements OnInit {
-  videos = [];
+  videos: Video[];
   videoService: VideoService;
   carouselOptions = {items: 3,
     nav: true,

@@ -10,6 +10,10 @@ import { VideoCarouselComponent } from './video-carousel/video-carousel.componen
 import { OwlModule } from 'ngx-owl-carousel';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import {VgCoreModule} from 'videogular2/core';
+import {VgControlsModule} from 'videogular2/controls';
+import {VgOverlayPlayModule} from 'videogular2/overlay-play';
+import {VgBufferingModule} from 'videogular2/buffering';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     MatButtonModule,
     OwlModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

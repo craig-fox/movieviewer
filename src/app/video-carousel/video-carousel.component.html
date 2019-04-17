@@ -3,11 +3,12 @@
     <owl-carousel
       [options]="carouselOptions"
       [items]="videos"
+      [carouselClasses]="['owl-theme']"
     >
-      <div class="item" *ngFor="let image of videos;let i = index">
-        <div>
-          <img [src]="image.cover"/>
-          <div>{{image.title}}</div>
+      <div class="item" *ngFor="let video of videos">
+        <div class="video">
+          <img [src]="video.cover" [routerLink]="['/play',video.play]" />
+          <div>{{video.title}}</div>
         </div>
       </div>
     </owl-carousel>

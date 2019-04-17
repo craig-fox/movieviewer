@@ -6,7 +6,7 @@ import { VideoCarouselComponent } from './video-carousel/video-carousel.componen
 
 const routes: Routes = [
   { path: 'history', component: HistoryComponent },
-  { path: 'play', component: PlayComponent },
+  { path: 'play/:play', component: PlayComponent },
   { path: 'carousel', component: VideoCarouselComponent },
   { path: '', redirectTo: 'carousel', pathMatch: 'full'}
 ];

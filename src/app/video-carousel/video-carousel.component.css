@@ -9,3 +9,7 @@
   float: left;
   margin-top: 60px;
 }
+
+.video {
+  cursor: pointer;
+}

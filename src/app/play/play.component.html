@@ -1,3 +1,6 @@
-<p>
-  play works!
-</p>
+
+<vg-player>
+  <video [vgMedia]="media" #media id="singleVideo" preload="auto" autoplay="true" controls>
+    <source [src]="play" type="video/mp4">
+  </video>
+</vg-player>
