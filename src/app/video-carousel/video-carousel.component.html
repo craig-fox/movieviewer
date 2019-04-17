@@ -1,0 +1,15 @@
+<div class="owl-carousel-holder">
+  <div class="carousel-section">
+    <owl-carousel
+      [options]="carouselOptions"
+      [items]="videos"
+    >
+      <div class="item" *ngFor="let image of videos;let i = index">
+        <div>
+          <img [src]="image.cover"/>
+          <div>{{image.title}}</div>
+        </div>
+      </div>
+    </owl-carousel>
+  </div>
+</div>
